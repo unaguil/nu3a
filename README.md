@@ -9,7 +9,7 @@ final year project (2002/2003) at the University of Deusto.
 Features
 --------
 
-* Hierarchycal engine
+* Hierarchical engine
 * Transformations
 * Basic colision detection (bounding boxes)
 * Object picking using ray tracing
@@ -18,7 +18,7 @@ Features
 	* Textures
 	* Basic materials
 * Math classes (Vector, Matrix, ...)
-* XML persitence of scenes (ad-hoc format)
+* XML persistence of scenes (ad-hoc format)
 
 Examples
 --------
