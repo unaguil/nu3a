@@ -1,5 +1,5 @@
 /*
-*	Copyright (c) 2003, 2011 Jorge García, Unai Aguilera
+*	Copyright (c) 2003, 2012 Jorge García, Unai Aguilera
 *
 *	This file is part of Nu3A.
 *
@@ -19,6 +19,8 @@
 *
 *	Authors: Jorge García <bardok@gmail.com>, Unai Aguilera <gkalgan@gmail.com>
 */
+
+package examples;
 
 import nu3a.math.*;
 import nu3a.geometry.*;

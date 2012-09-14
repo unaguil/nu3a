@@ -20,24 +20,12 @@
 		<delete dir="dist" />
 	</target>
 
-	<target depends="init" name="dist">
+	<target depends="init" name="build">
 		<echo message="${ant.project.name}: ${ant.file}" />
 		<javac debug="false" destdir="bin" source="${source}" target="${target}" includeAntRuntime="false">
 			<src path="src" />
 		</javac>
 		<jar jarfile="dist/nu3a-1.0.jar" basedir="bin" />
 		<jar destfile="dist/nu3a-sources-1.0.jar" basedir="src" />
-	</target>
-
-	<target depends="dist" name="build">
-		<mkdir dir="bin/examples"/>
-		<echo message="${ant.project.name}: ${ant.file}" />
-		 <javac debug="false" destdir="bin/examples" source="${source}" target="${target}" includeAntRuntime="false">
-            <src path="examples" />
-			<classpath refid="Nu3A.classpath" />
-        </javac>
-		<copy todir="bin/examples/files">
-		    <fileset dir="examples/files"/>
-		 </copy>
 	</target>
 </project>
