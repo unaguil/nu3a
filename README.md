@@ -23,7 +23,16 @@ Features
 Examples
 --------
 
-Coming soon!
+1. Compile
+	
+	ant 
+
+2. Run an example
+	
+	java -cp dist/nu3a-1.0.jar examples.BasicTest -> Triangle rendering test
+
+	java -cp dist/nu3a-1.0.jar examples.SceneTest -> More complex scene. Press L to set light on/off, mouse to select an object and show its bounding box and cursors to move the box.
+
 
 License
 -------
