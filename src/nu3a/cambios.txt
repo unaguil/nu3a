@@ -1,0 +1,40 @@
+Con un *** marcados los cambios realizados
+
+***N3Node => removeParent => protected
+***N3GroupNode => getChilds => getChildren
+***N3LeafNode => clase abstracta
+***N3Light => clase abstracta
+***Cambio de concepto: Nodo => sólo puede pertenecer a una escena (tiene su lógica, dos escenas son dos mundos diferentes, no vamos a entrar con discusiones filosóficas sobre entes que existen en varias dimensiones simultáneas, como por ejemplo yo). Implicaciones: un nodo matiene un puntero a la escena a la que pertenece (se le pasa en el constructor). Esto se usa a la hora de añadir luces, cámaras, etc... notifican a la escena que se han añadido, y se dan de alta en sus respectivos vectores.
+*** En las clases abstractas he puesto su constructor como protected
+
+N3Node: (Visio) asociación de 1 a n con escena, nuevo método getScene. Propiedad name Set/GetName. Remove, elimina el nodo y sus hijos.
+N3Scene: (Visio) operaciones sobre el vector de luces, vector de cámaras, vector de objetos, cámara por defecto. AddEntry, removeEntry (hashtable). Metodo render(N3Render).
+N3DirectionalLight: (Visio) faltan los "get"
+N3SpotLight: (Visio) faltan los "get"
+N3Camera: (Visio) además de posición y ángulo, un Znear y un Zfar (la dirección no hace falta que la mantenga, porque las rotaciones dirán hacia dónde mira... vaya, y creo que la posición tampoco se necesita, ya que la posición viene dada por las traslaciones... además hay una excepción más que hay que meter..., metodo setObjectTransformation, setCameraTransformation.
+N3VisualObject => (Visio) la operación "setGeometry" la ponemos a nivel de los objetos visuales hijos. De esta manera obligamos a que los tipos de geometría sean los necesarios... el getGeometry si puede ser genérico, para que al recorrer el árbol se puedan procesar todos los objetos.
+N3AbstractPipeline => (Visio)
+
+
+***N3ColorRGBA => ( Sigue faltando en el Visio) tenemos que meterla en algún sitio. Por ahora la he implementado en escena.
+N3ColorInformation => Visio
+N3Render-> (Visio)
+N3OpenGLRender-> (Visio)
+N3Node, N3TransformationNode,N3GroupNode => (Visio) he metido lo de las matrices de transformación acumuladas. Tienen los métodos setDirty (node y groupnode) y getAccMatrix(node y transformationnode)
+
+
+Nuevos paquetes que todavia no estan en el visio. Quiza haya que refinar el diseño. 
+nu3a.util.fs -> Contiene una clase que permite hacer FullScreen Rendering.
+nu3a.util.timer -> Tiene un timer y una interfaz para hacer el callback del timer.
+
+-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_
+Cuestiones a considerar:
+
+Hemos definido una cámara, pero esta es una cámara en perspectiva... creo que deberíamos de definir también una cámara ortogonal (un volúmen de visualización).
+-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_
+
+TO-DO:
+
+- Materiales
+- Asignar el material a los objetos visuales.
+- Interfaces de los nodos de la escena (animable, colisiones...)
