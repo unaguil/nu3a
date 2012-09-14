@@ -12,7 +12,7 @@ Features
 * Hierarchical engine
 * Transformations
 * Basic colision detection (bounding boxes)
-* Object picking using ray tracing
+* Object picking
 * Pure software render with:
 	* Light support (ambient and spot lights)
 	* Textures
