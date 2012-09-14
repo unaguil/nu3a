@@ -11,13 +11,13 @@ Features
 
 * Hierarchical engine
 * Transformations
-* Basic colision detection (bounding boxes)
+* Basic collision detection (bounding boxes)
 * Object picking
 * Pure software render with:
 	* Light support (ambient and spot lights)
 	* Textures
 	* Basic materials
-* Math classes (Vector, Matrix, ...)
+* Math classes (vector, matrix, ...)
 * XML persistence of scenes (ad-hoc format)
 
 Examples
@@ -35,7 +35,7 @@ Examples
    		
 * A more complex scene
 
-		java -cp dist/nu3a-1.0.jar examples.SceneTest 
+		java -cp dist/nu3a-1.0.jar examples.SceneTest
  
 	* Press L to set light on/off
  	* Use + and - to increase or reduce the spot light angle
@@ -48,4 +48,3 @@ License
 [GPL v3](http://www.gnu.org/licenses/gpl-3.0.html)
 
 Jorge García <bardok@gmail.com>, Unai Aguilera <gkalgan@gmail.com>
-
