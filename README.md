@@ -23,7 +23,7 @@ Features
 Examples
 --------
 
-1. **Compile**
+1. **Build**
 
 		ant 
 
@@ -31,15 +31,16 @@ Examples
 	
 * Triangle drawing test
 
-			java -cp dist/nu3a-1.0.jar examples.BasicTest
+		java -cp dist/nu3a-1.0.jar examples.BasicTest
    		
-* A more complex scene.
- * Press L to set light on/off.
- * Mouse click to select an object and show its bounding box.
- * Use cursors to move the box.
+* A more complex scene
 
-			java -cp dist/nu3a-1.0.jar examples.SceneTest 
-
+		java -cp dist/nu3a-1.0.jar examples.SceneTest 
+ 
+	* Press L to set light on/off
+ 	* Use + and - to increase or reduce the spot light angle
+ 	* Mouse click to select an object and show its bounding box
+ 	* Use cursors to move the nearest box
 
 License
 -------
