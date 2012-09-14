@@ -1,7 +1,7 @@
 Nu3A
 ====
 
-Nu3A is a simple 3D library for Java.
+*Nu3A is a simple 3D library for Java.*
 
 The library was developed by the authors as their Computer Engineering 
 final year project (2002/2003) at the University of Deusto.
