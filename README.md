@@ -8,6 +8,8 @@ final year project (2002/2003) at the University of Deusto.
 
 **Authors:** Jorge García <bardok@gmail.com>, Unai Aguilera <gkalgan@gmail.com>
 
+**License:** [GPL v3](http://www.gnu.org/licenses/gpl-3.0.html)
+
 Features
 --------
 
@@ -43,8 +45,3 @@ Examples
  	* Use + and - to increase or reduce the spot light angle
  	* Mouse click to select an object and show its bounding box
  	* Use cursors to move the nearest box
-
-License
--------
-
-[GPL v3](http://www.gnu.org/licenses/gpl-3.0.html)
