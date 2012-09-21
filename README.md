@@ -6,9 +6,12 @@ Nu3A
 The library was developed by the authors as their Computer Engineering 
 final year project (2002/2003) at the University of Deusto.
 
-**Authors:** Jorge García <bardok@gmail.com>, Unai Aguilera <gkalgan@gmail.com>
-
 **License:** [GPL v3](http://www.gnu.org/licenses/gpl-3.0.html)
+
+###Authors:
+Jorge García <bardok@gmail.com>
+
+Unai Aguilera <gkalgan@gmail.com>   [![endorse](http://api.coderwall.com/unaguil/endorsecount.png)](http://coderwall.com/unaguil)
 
 Features
 --------
