@@ -11,7 +11,7 @@ final year project (2002/2003) at the University of Deusto.
 ###Authors:
 Jorge García <bardok@gmail.com>
 
-Unai Aguilera <gkalgan@gmail.com>   [![endorse](http://api.coderwall.com/unaguil/endorsecount.png)](http://coderwall.com/unaguil)
+Unai Aguilera <gkalgan@gmail.com>
 
 Features
 --------
